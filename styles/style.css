@@ -1,13 +1,15 @@
-header{
+header {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 391px 36px 148px 184px 240px;
     align-items: center;
     font-family: "Raleway-Regular", sans-serif;
-    min-width: 1100px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
     min-height: 293px;
 }
-.header-menu{
+.header-menu {
     grid-column: 1;
     display: flex;
     flex-direction: row;
@@ -18,28 +20,28 @@ header{
     height: 22px;
     font-size: 18px;
 }
-.menu-header-with-circle{
+.menu-header-with-circle {
     list-style: circle inside;
     white-space: nowrap;
     gap: 3px;
     line-height: 100%;
     letter-spacing: 0%;
 } 
-.menu-header-with-circle a{
+.menu-header-with-circle a {
     margin-left: 2px;
     color: #000000;
 } 
-.logo-header{
+.logo-header {
     grid-column: 3;
     width: 148px;
     height: 105px;
 }
-.logo-header img{
+.logo-header img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.contacts{
+.contacts {
     grid-column: 5;
     display: flex;
     flex-direction: column;
@@ -48,37 +50,39 @@ header{
     max-width: 240px;
     border-width: 1px;
     font-size: 18px;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
 }
-.contacts a{
+.contacts a {
     color: #000000;
 }
-.cover{
+.cover {
     position: relative;
     box-sizing: border-box;
     font-family: "Raleway-Bold", sans-serif;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 1100px; 
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     height: 757px;
     font-size: 22px;
 }
-.cover-img{
+.cover-img {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
 }
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color:rgba(0, 0, 0, 0.6); 
     z-index: 1;
 }
 .description {
@@ -93,7 +97,7 @@ header{
     width: 100%;
     height: 100%;
 }
-.first-word{
+.first-word {
     grid-row: 1;
     grid-column: 1;
     justify-self: start;
@@ -102,7 +106,7 @@ header{
     line-height: 114px;
     letter-spacing: 0.3em;
 }
-.second-word{
+.second-word {
     justify-self: center;
     grid-column: 3;
     grid-row: 2;
@@ -111,8 +115,8 @@ header{
     line-height: 114px;
     letter-spacing: 0.3em;
 }
-.third-word{
-    grid-column: 3 / span 2;
+.third-word {
+    grid-column: 3/ span 2;
     grid-row: 3;
     justify-self: end;
     z-index: 2;
@@ -120,8 +124,8 @@ header{
     line-height: 114px;
     letter-spacing: 0.3em;
 }
-.subline{
-    grid-column: 1 / span 3; 
+.subline {
+    grid-column: 1/ span 3; 
     grid-row: 5;
     z-index: 2;
     margin: 0;
@@ -131,19 +135,18 @@ header{
     line-height: 28px;
     word-spacing: 16px;
 }
-button{
+button {
     grid-row: 5;
     grid-column: 4;
     z-index: 2;
     border: 1px solid #FFFFFF;
     background: transparent;
     justify-self: end;
-    z-index: 2;
     width: 256px;
     height: 51px;
     align-items: center;
 }
-.button-text{
+.button-text {
     z-index: 2;
     font-family: "Raleway-Regular", sans-serif;
     text-transform: uppercase;
@@ -151,22 +154,23 @@ button{
     color: #FFFFFF;
     line-height: 100%;
 }
-.lots{
+.lots {
     box-sizing: border-box;
     padding: 74px 24px 120px 24px;
     font-family: "Raleway-Bold", sans-serif;
-    width: 1100px;
-    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     height: auto;
 }
-.h2{
+.h2 {
     margin-bottom: 27px;
     font-size: 40px;
     width: 121px;
     height: 47px;
     margin-left: 40px;
 }
-.list-of-lots{
+.list-of-lots {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 334px 334px 334px;
@@ -175,28 +179,27 @@ button{
     padding-left: 0;
     margin: 0;
 }
-.name-of-lot{
+.name-of-lot {
     font-family: "Raleway-Bold", sans-serif;
     font-size: 22px;
     line-height: 120%;
     letter-spacing: 0%;
     text-transform: uppercase;
 }
-.lot-1{
+.lot-1 {
     position: relative;
     width: 334px;
     height: 596px;
 } 
-.lot-1 a{
+.lot-1 a {
     position: absolute;
     top: 48px;
     right: 40px;
     left: 40px;
-    right: 40px;
     z-index: 2;
     color: #FFFFFF;
 }
-.text-of-lot-1{
+.text-of-lot-1 {
     position: absolute;
     top: 404px;
     left: 40px;
@@ -206,18 +209,18 @@ button{
     font-size: 20px;
     color: #FFFFFF;
 }
-.photo-lot-1{
+.photo-lot-1 {
     width: 100%;
     height: 100%;
     z-index: 1;
     object-fit: cover;
 }
-.lot-2{
+.lot-2 {
     position: relative;
     width: 334px;
     height: 596px;
 }
-.lot-2 a{
+.lot-2 a {
     position: absolute;
     top: 48px;
     left: 40px;
@@ -226,7 +229,7 @@ button{
     font-family: "Raleway-Regular", sans-serif;
     color: #FFFFFF;
 } 
-.text-of-lot-2{
+.text-of-lot-2 {
     position: absolute;
     top: 188px;
     left: 40px;
@@ -234,29 +237,29 @@ button{
     z-index: 2;
     font-family: "Raleway-Regular", sans-serif;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.photo-lot-2{
+.photo-lot-2 {
     width: 100%;
     height: 100%;  
     z-index: 1;
     object-fit: cover;
 }
-.lot-3{
+.lot-3 {
     position: relative;
     width: 334px;
     height: 596px;
 }
-.lot-3 a{
+.lot-3 a {
     position: absolute;
     top: 48px;
     left: 40px;
     right: 40px;
     z-index: 2;
     font-family: "Raleway-Regular", sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
 } 
-.text-of-lot-3{
+.text-of-lot-3 {
     position: absolute;
     top: 284px;
     left: 40px;
@@ -266,13 +269,13 @@ button{
     font-size: 20px;
     color: #FFFFFF;
 }
-.photo-lot-3{
+.photo-lot-3 {
     width: 100%;
     height: 100%;
     z-index: 1;
     object-fit: cover;
 }
-.button-of-lots{
+.button-of-lots {
     font-family: "Raleway-Regular", sans-serif;
     display: block;
     font-size: 20px;
@@ -282,31 +285,33 @@ button{
     text-transform: lowercase;
     color: #000000;
 }
-.button-of-lots a{
+.button-of-lots a {
     color: #000000;
 }
-.about{
+.about {
     display: grid;
     box-sizing: border-box;
     padding: 35px 0px 0px 47px;
     grid-template-columns: 240px 693px;
     column-gap: 72px;
-    width: 1052px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     height: 595px;
 }
-.logo-coloumn{
-    position: relative; 
+.logo-coloumn {
+    position: relative;
     display: inline-block;
     width: 240px;
     height: 240px;
     margin-bottom: 320px;
 }
-.logo-black{
+.logo-black {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.logo-front{
+.logo-front {
     position: absolute;
     top: 64px;
     left: 46px;
@@ -315,13 +320,13 @@ button{
     height: 112px;
     object-fit: contain;
 }
-.about-coloumn{
+.about-coloumn {
     font-family: "Raleway-Regular", sans-serif;
     font-size: 20px;
     width: 693px;
     height: 449px;
 }
-h3{
+h3 {
   border: 6px;
   margin-top: 101px;
   justify-self: start;
@@ -330,15 +335,17 @@ h3{
   text-transform: uppercase;
   line-height: 100%;
 }
-footer{
+footer {
     display: grid;
     box-sizing: border-box;
     padding: 0px 50px 82px 50px;
     grid-template-columns: 264px 154px 163px 177px 240px;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     height: 180px;
 } 
-.contacts-footer{
+.contacts-footer {
     grid-column: 1;
     display: flex;
     flex-direction: column;
@@ -348,12 +355,12 @@ footer{
     max-width: 240px;
     border-width: 1px;
     font-size: 18px;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
 }
-.contacts-footer a{
+.contacts-footer a {
     color: #000000;
 }
-.menu-footer{
+.menu-footer {
     font-family: "Raleway-Regular", sans-serif;
     font-size: 18px;
     grid-column: 3;
@@ -362,42 +369,42 @@ footer{
     list-style: none;
     align-items: center;
     padding-left: 0; 
-    margin: 0; 
+    margin: 0;
 }
-.menu-without-circle{
+.menu-without-circle {
     grid-column: 5;
 }
-.menu-without-circle a{
+.menu-without-circle a {
     color: #000000;
 }
-.socials{
-   display: grid;
+.socials {
+    display: grid;
     box-sizing: border-box;
-    grid-template-columns: 48px 48px 48px; 
+    grid-template-columns: 48px 48px 48px;
     gap: 48px;
 }
-.socials-youTube{
-    width: 48px; 
+.socials-youTube {
+    width: 48px;
     height: 48px;
 }
-.socials-youTube img{
-    width: 100%; 
+.socials-youTube img {
+    width: 100%;
     height: 100%;
 }
-.socials-vk{
-    width: 48px; 
+.socials-vk {
+    width: 48px;
     height: 48px;
 }
-.socials-vk img{
-    width: 100%; 
+.socials-vk img {
+    width: 100%;
     height: 100%;
 }
-.socials--pinterest{
-    width: 48px; 
+.socials-pinterest {
+    width: 48px;
     height: 48px;
 }
-.socials--pinterest img{
-    width: 100%; 
+.socials-pinterest img {
+    width: 100%;
     height: 100%;
 }
 
